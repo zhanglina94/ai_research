@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+# Node bundled runtime (root only)
+/tools/
+tools/node20/
+
+# Storage
+storage/papers/*
+storage/experiments/*
+backend/storage/
+!storage/papers/.gitkeep
+!storage/experiments/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

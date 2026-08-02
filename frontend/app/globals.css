@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Light theme (default, ChatGPT-style) ── */
+:root,
+[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #0d0d0d;
+  --sidebar: #f9f9f9;
+  --card: #ffffff;
+  --border: #e5e5e5;
+  --border-focus: #b4b4b4;
+  --hover: #ececec;
+  --active: #e0e0e0;
+  --muted: #6e6e80;
+  --accent: #10a37f;
+  --input-bg: #ffffff;
+  --input-shadow: 0 0 0 1px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.06);
+  --send-bg: #0d0d0d;
+  --send-fg: #ffffff;
+  --send-disabled: #ececec;
+  --user-avatar: #ececec;
+  --pill-active: #f0f0f0;
+}
+
+/* ── Dark theme ── */
+[data-theme="dark"] {
+  --background: #212121;
+  --foreground: #ececec;
+  --sidebar: #171717;
+  --card: #2f2f2f;
+  --border: #424242;
+  --border-focus: #6e6e80;
+  --hover: #2f2f2f;
+  --active: #3a3a3a;
+  --muted: #9b9b9b;
+  --accent: #10a37f;
+  --input-bg: #2f2f2f;
+  --input-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 4px 16px rgba(0,0,0,0.2);
+  --send-bg: #ececec;
+  --send-fg: #0d0d0d;
+  --send-disabled: #424242;
+  --user-avatar: #424242;
+  --pill-active: #2f2f2f;
+}
+
+html {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Söhne", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
